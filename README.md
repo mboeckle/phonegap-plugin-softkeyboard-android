@@ -20,7 +20,7 @@ I have not tried to use it with PhoneGap directly.
 In your app's Android build settings (<https://cloud.appgyver.com/applications/>_appId_), fill in the `Plugins` field; e.g. (the example assumes that this plugin is the only one to use):
 
     [
-      { "source":"https://github.com/mklement0/appgyver-steroids-plugin-softkeyboard-android.git" }
+      { "source":"https://github.com/mklement0/phonegap-plugin-softkeyboard-android.git" }
     ]
 
 This will cause this repo to be incorporated into your app's cloud compilation process, including compilation of the `.java` assets.
