@@ -11,7 +11,7 @@
   </description>
 
   <!--   <asset src="www/softkeyboard.js" target="softkeyboard.js" />  -->  
-  <asset src="www/softkeyboard.js" target="Application/build/softkeyboard.js" />
+  <asset src="www/softkeyboard.js" target="softkeyboard.js" />
 
   <engines>
     <engine name="cordova" version=">=2.0.0" />
