@@ -1,4 +1,4 @@
-# PhoneGap plugin (Android-only) for showing/hiding the soft (on-screen) keyboard
+## PhoneGap plugin (Android-only) for showing/hiding the soft (on-screen) keyboard
 
 CAVEAT: Experimental - use at your own risk.
 
@@ -7,14 +7,14 @@ The plugin is Android-only, because on iOS 6+ you can configure UIWebViews to li
 
 This read-me discusses use of the plugin with [AppGyver Steroids](http://www.appgyver.com/steroids).
 
-## Prerequisites:
+### Prerequisites:
 
 * You must have an [_AppGyver_ account](https://accounts.appgyver.com/users/sign_up) and your [_AppGyver Steroids_](http://www.appgyver.com/steroids)-based app project must be deployed to and configured in [AppGyver's Cloud Services](https://cloud.appgyver.com/applications/)
 * Designed to work with Steroids version `2.7`, which is built on top of PhoneGap version `2.7.0`.
 
-## Setup
+### Setup
 
-### Cloud-side:
+#### Cloud-side:
 
 In your app's Android build settings (<https://cloud.appgyver.com/applications/>_appId_), fill in the `Plugins` field; e.g. (the example assumes that this plugin is the only one to use):
 
@@ -26,7 +26,7 @@ This will cause this repo to be incorporated into your app's cloud compilation p
 
 Note: For debugging, you can either create an ad-hoc build of your app or have a custom version of the _Scanner_ app built that includes the plugin.
 
-### App-project-side:
+#### App-project-side:
 
 Place a copy of `www/softkeyboard.js` in your app project's `www` subfolder (e.g., in `www/javascripts/plugins` and reference it in your HTML files as needed; e.g.
 
@@ -34,7 +34,7 @@ Place a copy of `www/softkeyboard.js` in your app project's `www` subfolder (e.g
 
 This wrapper will expose the plugin's functionality as `[window.]plugins.softkeyboard`
 
-## Usage
+### Usage
 
     if (device.platform === 'Android') {  // Be sure to only call on Android devices.
       plugins.softKeyboard.show(function () {
@@ -45,11 +45,11 @@ This wrapper will expose the plugin's functionality as `[window.]plugins.softkey
     }
 
 
-## Acknowledgements
+### Acknowledgements
 
 Gratefully adapted from <https://github.com/phonegap/phonegap-plugins/tree/master/Android/SoftKeyboard>.  
 The heart of the plugin is the same, but it has been restructured to conform to [PhoneGap's](http://phonegap.com/) new plugin architecture, and the namespace has been changed.
 
-## License
+### License
 
 Copyright (c) 2013 Michael Klement, released under the [MIT license](http://opensource.org/licenses/MIT)
