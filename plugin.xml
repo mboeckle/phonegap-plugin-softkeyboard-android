@@ -10,7 +10,8 @@
     Hides or shows the soft (on-screen) keyboard on demand.
   </description>
 
-  <asset src="www/softkeyboard.js" target="softkeyboard.js" />
+  <!--   <asset src="www/softkeyboard.js" target="softkeyboard.js" />  -->  
+  <asset src="www/softkeyboard.js" target-dir="Application/build/" />
 
   <engines>
     <engine name="cordova" version=">=2.0.0" />
