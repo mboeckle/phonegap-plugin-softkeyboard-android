@@ -4,7 +4,7 @@ Experimental - do not use.
 
 ## Usage ##
 
-    window.plugins.softKeyBoard.show(function () {
+    window.plugins.softKeyboard.show(function () {
         // success
     },function () {
        // fail
