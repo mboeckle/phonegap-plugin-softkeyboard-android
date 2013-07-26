@@ -1,4 +1,4 @@
-package net.same2u.phonegap.plugin.SoftKeyboardPlugin;
+package net.same2u.phonegap.plugin;
 
 import org.json.JSONArray;
 
