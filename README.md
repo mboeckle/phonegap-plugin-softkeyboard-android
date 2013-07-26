@@ -5,7 +5,8 @@ CAVEAT: Experimental - use at your own risk.
 This [PhoneGap](http://phonegap.com/) plugin overcomes the (by-design) restriction that you cannot cause the on-screen keyboard to appear in WebViews simply by calling `.focus()` on an input element (except in limited circumstances).  
 The plugin is Android-only, because on iOS 6+ you can configure UIWebViews to lift this restriction programmatically. In the context of _AppGyver Steroids_ projects, you simply set `KeyboardDisplayRequiresUserAction` in `www/config.ios.xml` to `false`.
 
-This read-me discusses use of the plugin with [AppGyver Steroids](http://www.appgyver.com/steroids).
+This read-me discusses use of the plugin via [AppGyver Steroids](http://www.appgyver.com/steroids).  
+I have not tried to use it with PhoneGap directly.
 
 ### Prerequisites:
 
