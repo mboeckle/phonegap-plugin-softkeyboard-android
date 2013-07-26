@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="net.same2u.phonegap.plugin.SoftKeyboardPlugin"
+    version="0.0.1">
+
+    <name>Soft-Keyboard Display Control for Android</name>
+
+  <description>
+    Hides or shows the soft (on-screen) keyboard on demand.
+  </description>
+
+  <asset src="www/softkeyboard.js" target="softkeyboard.js" />
+
+  <engines>
+    <engine name="cordova" version=">=2.0.0" />
+  </engines>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="plugins">
+      <plugin name="SoftKeyboardPlugin" value="net.same2u.phonegap.plugin.SoftKeyboardPlugin" onload="true"/>
+    </config-file>
+
+    <source-file src="src/android/net/same2u/phonegap/plugin/SoftKeyboard.java" target-dir="src/net/same2u/phonegap/plugin/" />
+
+  </platform>
+
+</plugin>
