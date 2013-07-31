@@ -41,7 +41,7 @@ This wrapper will expose the plugin's functionality as `[window.]plugins.softkey
     if (device.platform === 'Android') {  // Be sure to only call on Android devices.
       plugins.softKeyboard.show(function () {
           // success
-      },function () {
+      },function (errDescr) {
          // fail
       });
     }
