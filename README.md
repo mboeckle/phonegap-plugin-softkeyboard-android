@@ -42,7 +42,7 @@ This wrapper will expose the plugin's functionality as `[window.]plugins.softkey
 
 ##### Reference the plugin in your Android configuration:
 
-Add the following element as a child element to the `cordova/plugins` element of your project's `wwww/config.android.xml` file:
+Add the following element as a child element to the `cordova/plugins` element of your project's `www/config.android.xml` file:
 
     <plugin name="SoftKeyboardPlugin" value="net.same2u.phonegap.plugin.SoftKeyboard" onload="true"/>
 
