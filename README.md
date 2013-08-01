@@ -30,11 +30,21 @@ Note: For debugging, you can either create an ad-hoc build of your app or have a
 
 #### App-project-side:
 
-Place a copy of `www/softkeyboard.js` in your app project's `www` subfolder (e.g., in `www/javascripts/plugins` and reference it in your HTML files as needed; e.g.
+**Note**: These steps are current as of AppGyver Cloud Service version `2.7.3`.
+
+##### Include the JavaScript wrapper:
+
+Place a copy of `www/softkeyboard.js` from this repo in your app project's `www` subfolder (e.g., in `www/javascripts/plugins` and reference it in your HTML files as needed; e.g.
 
     <script src="javascripts/plugins/softkeyboard.js"></script>
 
 This wrapper will expose the plugin's functionality as `[window.]plugins.softkeyboard`
+
+##### Reference the plugin in your Android configuration:
+
+Add the following element as a child element to the `cordova/plugins` element of your project's `wwww/config.android.xml` file:
+
+    <plugin name="SoftKeyboardPlugin" value="net.same2u.phonegap.plugin.SoftKeyboard" onload="true"/>
 
 ### Usage
 
